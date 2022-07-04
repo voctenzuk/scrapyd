@@ -19,7 +19,9 @@ COPY --from=builder /app/wheels /wheels
 RUN pip install --no-cache /wheels/*
 
 COPY scrapyd.conf /etc/scrapyd/
+COPY start.sh .
+RUN chmod +x start.sh
 
 EXPOSE 6800
 
-CMD ["scrapyd"]
+CMD ["./start.sh"]
