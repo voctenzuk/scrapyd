@@ -1,0 +1,6 @@
+scrapy
+scrapyd
+https://github.com/k3kc/scrapy-rotating-proxies/archive/refs/heads/master.zip
+scrapeops-scrapy
+psycopg2-binary
+logparser
