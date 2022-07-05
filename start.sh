@@ -5,8 +5,9 @@ set -m
   
 # Start the primary process and put it in the background
 scrapyd &
-  
+
 # Start the helper process
+sleep 3
 logparser -dir /app/data/logs
   
 # the my_helper_process might need to know how to wait on the
